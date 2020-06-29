@@ -14,7 +14,8 @@ namespace SBSC_Assessment_UnitTest
             bool expected = true;
             JohnsonAdesanya assessmentClass = new JohnsonAdesanya();
             bool result = assessmentClass.Question1("3-4-5-6-7");
-            Assert.AreEqual(expected, result, "Question1 Method not implemented correctly");
+            Assert.AreEqual(expected, result, 
+                string.Format("Question1 TestMethod returned {0} instead of {1}", result.ToString(), expected.ToString()));
         }
 
         [TestMethod]
@@ -24,12 +25,18 @@ namespace SBSC_Assessment_UnitTest
             List<int> inputList = new List<int> {1, 4, 6, 9 };
             JohnsonAdesanya assessmentClass = new JohnsonAdesanya();
             int result = assessmentClass.Question2(inputList);
-            Assert.AreEqual(expected, result, string.Format("Question2 Method returned {0} instead of 7", result.ToString()));
+            Assert.AreEqual(expected, result,
+                string.Format("Question2 TestMethod returned {0} instead of {1}", result.ToString(), expected.ToString()));
         }
 
         [TestMethod]
         public void Question3TestMethod()
         {
+            string expected = "o1c3u1r2e2n1";
+            List<int> inputList = new List<int> { 1, 4, 6, 9 };
+            JohnsonAdesanya assessmentClass = new JohnsonAdesanya();
+            string result = assessmentClass.Question3("occurrence");
+            Assert.AreEqual(expected, result, string.Format("Question3 TestMethod returned {0} instead of {1}", result, expected));
         }
     }
 }

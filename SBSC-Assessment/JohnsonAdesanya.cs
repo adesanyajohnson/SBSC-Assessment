@@ -41,7 +41,7 @@ namespace SBSC_Assessment
                 return inputString;
 
             string outputString = string.Empty;
-            Char[] inputStringArray = inputString.ToCharArray();
+            char[] inputStringArray = inputString.ToCharArray().Distinct().ToArray<char>();
 
             foreach (char item in inputStringArray)
             {
