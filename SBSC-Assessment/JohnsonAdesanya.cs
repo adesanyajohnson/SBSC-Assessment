@@ -21,7 +21,7 @@ namespace SBSC_Assessment
             List<string> splitString = hyphenSeperated.Split('-').ToList<string>();
             int interval = 0, difference = 0, listLength = splitString.Count;
 
-            for (int i = 0; i < listLength; i++)
+            for (int i = 0; i < listLength - 1; i++)
             {
                 if (i == 0)
                     interval = int.Parse(splitString[i + 1]) - int.Parse(splitString[i]);
@@ -35,36 +35,19 @@ namespace SBSC_Assessment
             return true;
         }
 
-        public string Question3(string inputString)
-        {
-            if (string.IsNullOrEmpty(inputString))
-                return inputString;
-
-            string outputString = string.Empty;
-            char[] inputStringArray = inputString.ToCharArray().Distinct().ToArray<char>();
-
-            foreach (char item in inputStringArray)
-            {
-                int numOfOccurence = inputString.TakeWhile(x => x == item).Count();
-                outputString = string.Concat(item, numOfOccurence.ToString());
-            }
-
-            return outputString;
-        }
-
         public int Question2(List<int> inputIntegerList)
         {
             List<int> outputIntegerList = new List<int>();
             int absDifference = 0, listLength = inputIntegerList.Count;
             int kPosition = -1;
 
-            for (int i = 0; i < listLength; i++)
+            for (int i = 0; i < listLength - 1; i++)
             {
                 absDifference = Math.Abs(inputIntegerList[i + 1] - inputIntegerList[i]);
 
                 if (!inputIntegerList.Contains((int)absDifference))
                 {
-                    outputIntegerList.Add(absDifference);
+                    inputIntegerList.Add(absDifference);
                     listLength += 1;
                 }
                 else
@@ -75,6 +58,24 @@ namespace SBSC_Assessment
             }
 
             return kPosition;
+        }
+
+        public string Question3(string inputString)
+        {
+            if (string.IsNullOrEmpty(inputString))
+                return inputString;
+
+            string outputString = string.Empty;
+            char[] inputStringArray = inputString.ToCharArray().Distinct().ToArray<char>();
+
+            for (int i = 0; i < inputStringArray.Length; i++)
+            {
+                char currentChar = inputStringArray[i];
+                int numOfOccurence = inputString.Where(x => x == currentChar).Count();
+                outputString = string.Concat(outputString, currentChar, numOfOccurence.ToString());
+            }
+
+            return outputString;
         }
     }
 }
