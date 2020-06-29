@@ -41,7 +41,7 @@ namespace SBSC_Assessment
             foreach (char item in inputStringArray)
             {
                 int numOfOccurence = inputString.TakeWhile(x => x == item).Count();
-                string.Concat(outputString, numOfOccurence.ToString());
+                outputString = string.Concat(item, numOfOccurence.ToString());
             }
 
             return outputString;
