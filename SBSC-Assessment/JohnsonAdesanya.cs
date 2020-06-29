@@ -8,7 +8,7 @@ namespace SBSC_Assessment
 {
     public class JohnsonAdesanya
     {
-        public bool hyphenSeperatedNumbers(string hyphenSeperated)
+        public bool Question1(string hyphenSeperated)
         {
             if (string.IsNullOrEmpty(hyphenSeperated))
                 return false;
@@ -30,7 +30,7 @@ namespace SBSC_Assessment
             return true;
         }
 
-        public string stringRepeatedLetters(string inputString)
+        public string Question3(string inputString)
         {
             if (string.IsNullOrEmpty(inputString))
                 return inputString;
@@ -47,7 +47,7 @@ namespace SBSC_Assessment
             return outputString;
         }
 
-        public int orderedIntegerList(List<int> inputIntegerList)
+        public int Question2(List<int> inputIntegerList)
         {
             List<int> outputIntegerList = new List<int>();
             int absDifference = 0, listLength = inputIntegerList.Count;
