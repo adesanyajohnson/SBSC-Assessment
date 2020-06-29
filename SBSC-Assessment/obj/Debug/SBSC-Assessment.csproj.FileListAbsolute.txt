@@ -1,0 +1,5 @@
+c:\users\johnson\documents\visual studio 2012\Projects\SBSC-Assessment\SBSC-Assessment\bin\Debug\SBSC-Assessment.dll
+c:\users\johnson\documents\visual studio 2012\Projects\SBSC-Assessment\SBSC-Assessment\bin\Debug\SBSC-Assessment.pdb
+c:\users\johnson\documents\visual studio 2012\Projects\SBSC-Assessment\SBSC-Assessment\obj\Debug\SBSC-Assessment.csprojResolveAssemblyReference.cache
+c:\users\johnson\documents\visual studio 2012\Projects\SBSC-Assessment\SBSC-Assessment\obj\Debug\SBSC-Assessment.dll
+c:\users\johnson\documents\visual studio 2012\Projects\SBSC-Assessment\SBSC-Assessment\obj\Debug\SBSC-Assessment.pdb
