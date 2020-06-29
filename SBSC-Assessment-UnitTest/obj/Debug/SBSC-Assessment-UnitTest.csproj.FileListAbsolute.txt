@@ -1,0 +1,7 @@
+c:\users\johnson\documents\visual studio 2012\Projects\SBSC-Assessment\SBSC-Assessment-UnitTest\bin\Debug\SBSC-Assessment-UnitTest.dll
+c:\users\johnson\documents\visual studio 2012\Projects\SBSC-Assessment\SBSC-Assessment-UnitTest\bin\Debug\SBSC-Assessment-UnitTest.pdb
+c:\users\johnson\documents\visual studio 2012\Projects\SBSC-Assessment\SBSC-Assessment-UnitTest\bin\Debug\SBSC-Assessment.dll
+c:\users\johnson\documents\visual studio 2012\Projects\SBSC-Assessment\SBSC-Assessment-UnitTest\bin\Debug\SBSC-Assessment.pdb
+c:\users\johnson\documents\visual studio 2012\Projects\SBSC-Assessment\SBSC-Assessment-UnitTest\obj\Debug\SBSC-Assessment-UnitTest.csprojResolveAssemblyReference.cache
+c:\users\johnson\documents\visual studio 2012\Projects\SBSC-Assessment\SBSC-Assessment-UnitTest\obj\Debug\SBSC-Assessment-UnitTest.dll
+c:\users\johnson\documents\visual studio 2012\Projects\SBSC-Assessment\SBSC-Assessment-UnitTest\obj\Debug\SBSC-Assessment-UnitTest.pdb
