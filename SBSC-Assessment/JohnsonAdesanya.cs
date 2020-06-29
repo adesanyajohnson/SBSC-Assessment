@@ -29,5 +29,22 @@ namespace SBSC_Assessment
 
             return true;
         }
+
+        public string stringRepeatedLetters(string inputString)
+        {
+            if (string.IsNullOrEmpty(inputString))
+                return inputString;
+
+            string outputString = string.Empty;
+            Char[] inputStringArray = inputString.ToCharArray();
+
+            foreach (char item in inputStringArray)
+            {
+                int numOfOccurence = inputString.TakeWhile(x => x == item).Count();
+                string.Concat(outputString, numOfOccurence.ToString());
+            }
+
+            return outputString;
+        }
     }
 }
