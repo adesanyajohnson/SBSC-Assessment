@@ -8,6 +8,11 @@ namespace SBSC_Assessment
 {
     public class JohnsonAdesanya
     {
+        public JohnsonAdesanya()
+        {
+
+        }
+
         public bool Question1(string hyphenSeperated)
         {
             if (string.IsNullOrEmpty(hyphenSeperated))
