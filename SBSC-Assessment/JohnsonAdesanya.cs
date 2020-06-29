@@ -46,5 +46,30 @@ namespace SBSC_Assessment
 
             return outputString;
         }
+
+        public int orderedIntegerList(List<int> inputIntegerList)
+        {
+            List<int> outputIntegerList = new List<int>();
+            int absDifference = 0, listLength = inputIntegerList.Count;
+            int kPosition = -1;
+
+            for (int i = 0; i < listLength; i++)
+            {
+                absDifference = Math.Abs(inputIntegerList[i + 1] - inputIntegerList[i]);
+
+                if (!inputIntegerList.Contains((int)absDifference))
+                {
+                    outputIntegerList.Add(absDifference);
+                    listLength += 1;
+                }
+                else
+                {
+                    kPosition = listLength + 1;
+                    break;
+                }
+            }
+
+            return kPosition;
+        }
     }
 }
